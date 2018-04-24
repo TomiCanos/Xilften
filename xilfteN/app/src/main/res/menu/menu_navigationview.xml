@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/navigationItemAccion"
+        android:title="Acción">
+
+    </item>
+
+    <item
+        android:id="@+id/navigationItemAventura"
+        android:title="Aventura">
+
+    </item>
+
+    <item
+        android:id="@+id/navigationItemAnimacion"
+        android:title="Animación">
+
+    </item>
+
+    <item
+        android:id="@+id/navigationItemCienciaFiccion"
+        android:title="Ciencia Ficción">
+
+    </item>
+
+
+    <item
+        android:id="@+id/navigationItemClasicas"
+        android:title="Clasicas">
+
+    </item>
+
+
+    <item
+        android:id="@+id/navigationItemComedia"
+        android:title="Comedia">
+
+    </item>
+
+
+    <item
+        android:id="@+id/navigationItemDocumental"
+        android:title="Documental">
+
+    </item>
+
+    <item
+        android:id="@+id/navigationItemDrama"
+        android:title="Drama">
+
+    </item>
+
+
+    <item
+        android:id="@+id/navigationItemSuspenso"
+        android:title="Suspenso">
+
+    </item>
+
+
+    <item
+        android:id="@+id/navigationItemTerror"
+        android:title="Terror">
+
+    </item>
+
+
+
+
+
+
+
+
+
+
+
+
+</menu>

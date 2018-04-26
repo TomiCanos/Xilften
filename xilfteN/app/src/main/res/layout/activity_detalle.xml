@@ -4,20 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
-
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".View.MainActivity">
 
-
-    <FrameLayout
+    <android.support.v4.view.ViewPager
+        android:id="@+id/detalle_view_pager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/containerMainActivityFragment2">
-
-
-
-    </FrameLayout>
-
-
+        android:layout_height="match_parent"/>
 
 </LinearLayout>

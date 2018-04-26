@@ -1,8 +1,11 @@
-package com.example.pyaya.app_pelis_pedro;
+package com.example.pyaya.xilften.View;
 
+import android.annotation.TargetApi;
 import android.app.Fragment;
 import android.content.Intent;
+import android.os.Build;
 import android.support.annotation.NonNull;
+import android.support.annotation.RequiresApi;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -12,18 +15,25 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.example.pyaya.xilften.Model.Pelicula;
+import com.example.pyaya.xilften.R;
+
 import java.io.Serializable;
 import java.util.List;
+import java.util.Objects;
 
-public class MainActivity extends AppCompatActivity implements FragmentHome.Notificable2 {
+public class MainActivity extends AppCompatActivity implements FragmentHome.Notificable {
 
     NavigationView navigationView;
     DrawerLayout drawerLayout;
 
+    @TargetApi(Build.VERSION_CODES.KITKAT)
+    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Objects.requireNonNull(getSupportActionBar()).hide();
 
         FragmentHome fragmentHome = new FragmentHome();
 
@@ -57,17 +67,6 @@ public class MainActivity extends AppCompatActivity implements FragmentHome.Noti
 
     }
 
-    @Override
-    public void abrirDetalleContactoClickeado2(List listadeSeries) {
-        Intent intent = new Intent(MainActivity.this, ActivityViewPagerDetalle.class);
-        Bundle bundle = new Bundle();
-
-        bundle.putSerializable(ActivityViewPagerDetalle.CLAVE_LISTA_SERIES, (Serializable) listadeSeries);
-        intent.putExtras(bundle);
-
-        startActivity(intent);
-    }
-
     private void cargadorDeFragments(Fragment unFragment) {
        /* android.app.FragmentManager fragmentManager = getFragmentManager();
         android.app.FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
@@ -76,4 +75,15 @@ public class MainActivity extends AppCompatActivity implements FragmentHome.Noti
     }
 
 
+    @Override
+    public void abrirDetalleContactoClickeado(List<Pelicula> peliculas, Integer positionPelicula) {
+
+        Intent intent = new Intent(MainActivity.this, DetalleActivity.class);
+        Bundle bundle = new Bundle();
+        bundle.putSerializable(DetalleActivity.CLAVE_PELICULA,(Serializable) peliculas);
+        bundle.putInt(DetalleActivity.ID_POSITION, positionPelicula);
+        intent.putExtras(bundle);
+        startActivity(intent);
+
+    }
 }

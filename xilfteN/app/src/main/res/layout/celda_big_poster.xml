@@ -9,8 +9,7 @@
 
     <ImageView
         android:id="@+id/imagenCelda"
-        android:layout_width="100dp"
-        android:layout_height="150dp"
-        android:src="@drawable/houseofcards" />
+        android:layout_width="150dp"
+        android:layout_height="250dp" />
 
 </LinearLayout>

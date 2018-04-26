@@ -3,4 +3,8 @@
     <string name="image_trending">image_trending</string>
     <string name="trending_now">Trending Now</string>
     <string name="tv_show">TV shows</string>
+    <string name="releases">Releases</string>
+    <string name="nationals">Nationals</string>
+    <string name="comedy">Comedy</string>
+    <string name="because_you_watched">Because you watched: Saw II</string>
 </resources>

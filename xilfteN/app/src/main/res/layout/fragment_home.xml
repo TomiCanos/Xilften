@@ -6,27 +6,18 @@
     android:layout_marginBottom="16dp"
     android:background="@color/Negro"
     android:orientation="vertical"
-    tools:context=".View.FragmentHome">
+    tools:context=".view.FragmentHome">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <ImageView
-            android:layout_margin="16dp"
-            android:layout_width="match_parent"
-            android:layout_height="25dp"
-            android:layout_gravity="center"
-            android:scaleType="centerInside"
-            android:src="@drawable/xilften" />
-
-        <ImageView
+        <com.trabajo_integrador.xilften.view.ViewPageCustom
+            android:id="@+id/viewPagerCarrousel"
             android:layout_width="match_parent"
             android:layout_height="230dp"
-            android:layout_gravity="center"
-            android:scaleType="centerInside"
-            android:src="@drawable/johnwick_horizontal" />
+            android:layout_gravity="center" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -72,6 +63,7 @@
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:layout_marginBottom="16dp" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -86,6 +78,7 @@
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:layout_marginBottom="16dp" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -101,7 +94,7 @@
             android:layout_height="150dp"
             android:layout_marginBottom="16dp" />
 
-        <TextView
+        <!--<TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
@@ -114,7 +107,7 @@
             android:id="@+id/fragment_home_recycler_saw"
             android:layout_width="match_parent"
             android:layout_height="150dp"
-            android:layout_marginBottom="16dp" />
+            android:layout_marginBottom="16dp" />-->
 
     </LinearLayout>
 

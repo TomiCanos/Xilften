@@ -3,7 +3,11 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#000000</color>
     <color name="Blanco">#FFFFFF</color>
+    <color name="Transparente">#00000000</color>
+    <color name="FacebookBlue">#3b5998</color>
     <color name="Negro">#000000</color>
-    <color name="Gris">#46000000</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="GrisTransparente">#46000000</color>
+    <color name="colorAccent">#ffffff</color>
+    <color name="Gris">#867f7f</color>
+    <color name="Rojo">#ff1744</color>
 </resources>

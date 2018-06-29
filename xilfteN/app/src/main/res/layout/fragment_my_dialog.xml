@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative_my_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Negro"
+    tools:context="com.trabajo_integrador.xilften.view.MyDialog">
+
+    <TextView
+        android:id="@+id/textViewTituloMyDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:gravity="center_horizontal"
+        android:text="Haven't you logged in yet?"
+        android:textColor="@color/Blanco"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonLoginMyDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/textViewTituloMyDialog"
+        android:layout_below="@id/textViewTituloMyDialog"
+        android:background="@color/Transparente"
+        android:text="login"
+        android:textColor="@color/Blanco" />
+
+    <Button
+        android:layout_below="@id/textViewTituloMyDialog"
+        android:layout_toLeftOf="@id/buttonLoginMyDialog"
+        android:id="@+id/buttonBackMyDialog"
+        android:text="back"
+        android:textColor="@color/Blanco"
+        android:background="@color/Transparente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

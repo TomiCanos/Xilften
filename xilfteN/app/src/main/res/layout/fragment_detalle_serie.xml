@@ -1,0 +1,93 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Negro"
+    tools:context="com.trabajo_integrador.xilften.view.FragmentDetalleSerie">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linear_fragment_detalle_Serie"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/relative_fragment_detalle_Serie"
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+
+                <ImageView
+                    android:id="@+id/imagenFragmentDetalle_Serie"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textViewDescripcionFragmentDetalleSerie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="16dp"
+                android:textColor="@color/Blanco"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textViewCantidadSeasonsDetalleSerie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:textColor="@color/Gris"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/textViewCantidadEpisodesDetalleSerie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:textColor="@color/Gris"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewNombreFragmentDetalle_Serie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_marginStart="4dp"
+            android:textColor="@color/Blanco"
+            android:textSize="22sp"
+            android:maxLength="30"
+            android:textStyle="bold"
+            app:layout_anchor="@id/relative_fragment_detalle_Serie"
+            app:layout_anchorGravity="bottom|left" />
+
+        <com.varunest.sparkbutton.SparkButton
+            app:layout_anchor="@id/relative_fragment_detalle_Serie"
+            app:layout_anchorGravity="bottom|right"
+            android:id="@+id/imageButtonFavoritoFragmentDetalle_Serie"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_margin="4dp"
+            app:sparkbutton_iconSize="40dp"
+            android:background="@android:color/transparent"
+            app:sparkbutton_activeImage="@drawable/corazonfavoritoclickeado"
+            app:sparkbutton_inActiveImage="@drawable/corazonfavorito"
+            app:sparkbutton_primaryColor="@color/Blanco"
+            app:sparkbutton_secondaryColor="@color/Blanco" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</ScrollView>
